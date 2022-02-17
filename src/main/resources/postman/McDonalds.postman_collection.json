@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "f3b5df10-69f0-4a23-aafc-305090dabacd",
+		"name": "McDonalds",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create",
+			"item": [
+				{
+					"name": "1 - product BIG MAC",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Big Mac\",\r\n    \"status\" : \"ACTIVE\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "2 - product Fries",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Fries\",\r\n    \"status\" : \"INACTIVE\"\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/product",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3 - choice",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"name\": \"DRINK CHOICE\",\r\n  \"products\": [ 1, 2]\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/choice",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"choice"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4 - value meal",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \r\n  \"name\": \"DRINK MEAL\",\r\n  \"choices\": [1]\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/valueMeal",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"valueMeal"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "5 - choice findAll",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/choice",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"choice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6 - Choice change status",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/choice/1?status=INACTIVE",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"choice",
+						"1"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "INACTIVE"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7 - Choice not create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n  \"name\": \"DRINK MEAL\",\r\n  \"choices\": [1]\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/valueMeal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"valueMeal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product aLL",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "value meal",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/valueMeal",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"valueMeal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product all",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/product",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
