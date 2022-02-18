@@ -19,6 +19,8 @@ public class Cliente {
     private String id;
     @NotNull
     private String nome;
+    private String email;
+    private String telefone;
     private String cpf;
     private String rg;
     private Status status;

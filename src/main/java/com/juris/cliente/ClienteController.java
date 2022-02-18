@@ -7,11 +7,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static com.juris.constants.Constants.BASE_PATH;
 import static org.springframework.http.HttpStatus.*;
 
 @CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping(BASE_PATH + "/cliente")
 @AllArgsConstructor
 @Api(value = "Juris", tags = "Cliente")
 public class ClienteController {

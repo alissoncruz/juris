@@ -1,4 +1,4 @@
-package com.juris.user;
+package com.juris.model;
 
 import lombok.Builder;
 import lombok.Data;
@@ -17,4 +17,5 @@ public class User {
     private String name;
     private String email;
     private String password;
+    private String phone;
 }

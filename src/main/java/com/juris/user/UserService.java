@@ -1,5 +1,6 @@
 package com.juris.user;
 
+import com.juris.model.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

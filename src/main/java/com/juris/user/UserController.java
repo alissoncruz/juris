@@ -1,5 +1,6 @@
 package com.juris.user;
 
+import com.juris.model.User;
 import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
