@@ -22,8 +22,8 @@ public class ProcessoController {
 
     @PostMapping
     @ResponseStatus(CREATED)
-    public void create(@RequestBody Processo cliente){
-        service.save(cliente);
+    public void create(@RequestBody Processo processo){
+        service.save(processo);
     }
 
 

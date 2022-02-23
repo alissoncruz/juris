@@ -25,7 +25,6 @@ public class ClienteController {
         service.save(cliente);
     }
 
-
     @GetMapping
     @ResponseStatus(OK)
     public List<Cliente> findAll(){

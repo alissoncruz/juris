@@ -22,4 +22,6 @@ public class Processo {
     private String numero;
     private String cpf;
     private String descricao;
+    private String estadoCivil;
+    private String endereco;
 }
