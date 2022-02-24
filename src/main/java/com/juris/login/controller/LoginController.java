@@ -1,4 +1,4 @@
-package com.juris.login;
+package com.juris.login.controller;
 
 import com.juris.config.securiry.AccountCredentials;
 import lombok.extern.slf4j.Slf4j;
