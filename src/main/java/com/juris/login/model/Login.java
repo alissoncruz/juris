@@ -1,4 +1,4 @@
-package com.juris.login;
+package com.juris.login.model;
 
 import lombok.Data;
 

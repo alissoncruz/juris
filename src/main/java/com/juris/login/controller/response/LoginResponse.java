@@ -1,4 +1,4 @@
-package com.juris.login;
+package com.juris.login.controller.response;
 
 import lombok.Builder;
 import lombok.Data;
